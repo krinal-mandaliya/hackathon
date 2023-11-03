@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HomePage</title>
+    <link rel="stylesheet" type="text/css" href="path/to/your/font.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <div class="header">
+        <p class="header-text">c</p>
+        <span class="custom-text">urator</span>
+        <div class="round"><img src="Ellipse 1.jpg" alt=""></div>
+        <div style="padding-left: 40px;padding-top: 10px;"><div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          
+          <script>
+          function myFunction(x) {
+            x.classList.toggle("change");
+          }
+          </script></div>
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">1 / 3</div> -->
+          <img src="WhatsApp Image 2023-11-01 at 11.33.29_ca3f714f.jpg" style="width:100%">
+          <div class="numbertext"><p style="color: black;padding-left: 65px;padding-top: 55px; font-size: 30px;"><strong>JOIN US AND WE <br>
+            WILL BE YOUR HAND</strong></p>
+            <p style="padding-left: 250px;"><button class="button"><strong>GET STARTED</strong></button></p>
+        </div>
+        </div>
+           
+        </div>
+        
+        <div class="mySlides fade">
+          <!-- <div class="numbernumbertext">2 / 3</div> -->
+          <img src="WhatsApp Image 2023-11-01 at 11.48.42_40bcec6a.jpg" style="width:100%">
+          <div class="numbertext"><p style="color: black;padding-left: 310px;padding-top: 65px; font-size: 30px;">
+            <strong> YOUR DIGITAL<br>
+            CARETAKER...</strong></p></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <!-- <div class="numbernumbertext">3 / 3</div> -->
+          <img src="WhatsApp Image 2023-11-01 at 11.51.28_d84976b4.jpg" style="width:100%">
+          <div class="numbertext"><p style="color: white;padding-left: 80px;padding-top: 100px; font-size: 30px;">
+            <strong> HEALTHIER AND MORE CONNECTED FUTURE<br>
+                FOR ALL</strong></p></div>
+        </div>
+        <div class="mySlides fade">
+            <!-- <div class="numbernumbertext">3 / 3</div> -->
+            <img src="WhatsApp Image 2023-11-03 at 13.51.17_00b4444c.jpg" style="width:100%">
+            <div class="numbertext"><p style="color: black;padding-left: 80px;padding-top: 100px; font-size: 30px;">
+                <strong> CARE FOR THOSE<br>
+                    WHO ONCE<br>
+                    CARED FOR US..</strong></p></div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+        <div style="height: 200px;width: 100%;display: flex;background-color:  #388087;">
+
+            <div style="width: 49%;">
+                <p class="footer">CURATOR</p>
+                <p class="text1">Your Digital caretaker!</p>
+                <i class='fas fa-map-marker-alt' style='font-size:24px;color: white;'></i>
+                <p class="address">
+                    Lorem ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Maxime mollitia, molestiae<br>
+                    quas vel sint commodi repudiandae<br>
+                    <br>
+                </p>
+                <p class="author-text">&copy; by @Curator</p>
+            </div>
+
+            <div style="width: 0.5%;background-color: #BDD1D6;height: 170px;"></div>
+
+            <div style="width: 49%;display: flex;">
+                <div style="width: 170px; height: 150px;">
+                    <div class="custom-element" style="margin-left: 20px;margin-top: 15px;">
+                        <p class="div-text">Write your message here..</p>
+                    </div>
+                    <div class="element" style="margin-top: 20px;margin-left: 20px;">
+                        <p class="box-text">Contact us</p>
+                    </div>
+                </div>
+                <div width="100px" height="150px">
+                    <p class="quick-links">Quick links</p>
+                    <div class="menu">
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                            <li>Blog</li>
+                        </ul>
+                      </div>
+                      
+                </div>
+                
+            </div>
+
+        </div>
+        
+</body>
+</html>
